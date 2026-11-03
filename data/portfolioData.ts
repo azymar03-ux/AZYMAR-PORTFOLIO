@@ -567,6 +567,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Junior Game Developer & BOD",
     rpgClass: "Game Dev · BOD",
     initials: "NK",
+    image: "/images/team/nivash.jpg",
     linkedin: "https://www.linkedin.com/in/nivash-krishnan-a02ba537b/",
   },
   {

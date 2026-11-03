@@ -36,12 +36,12 @@ export default function TeamSection() {
           </FadeInItem>
         </FadeInStagger>
 
-        {/* 8-Member Grid (4 cols desktop) */}
-        <FadeInStagger className="mt-14 grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-4 lg:gap-10">
+        {/* Team Members Grid - Centered & Balanced */}
+        <FadeInStagger className="mt-14 flex flex-wrap justify-center gap-8 sm:gap-10 lg:gap-12">
           {TEAM_PARTY.map((member) => (
             <FadeInItem
               key={member.name}
-              className="group flex flex-col items-center text-center"
+              className="group flex w-40 flex-col items-center text-center sm:w-48 lg:w-52"
             >
               {/* Gradient Ring Wrapper via padding + background-gradient trick */}
               <div className="rounded-full bg-transparent p-[3px] transition-all duration-300 group-hover:scale-110 group-hover:bg-gradient-to-tr group-hover:from-[#4361EE] group-hover:to-[#7B2FF7] group-hover:shadow-lg group-hover:shadow-[#4361EE]/20">
@@ -49,7 +49,7 @@ export default function TeamSection() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="h-24 w-24 rounded-full border-2 border-white object-cover object-top sm:h-28 sm:w-28 dark:border-[#0F0F1A]"
+                    className="h-24 w-24 rounded-full border-2 border-white object-cover object-center shadow-inner sm:h-28 sm:w-28 dark:border-[#0F0F1A]"
                   />
                 ) : (
                   <div
