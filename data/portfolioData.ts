@@ -516,6 +516,7 @@ export interface TeamMember {
   role: string;
   rpgClass: string;
   initials: string;
+  image?: string;
   twitter?: string;
   linkedin: string;
 }
@@ -526,6 +527,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Business Founder",
     rpgClass: "Commander · Founder",
     initials: "SK",
+    image: "/images/team/sanjay.jpg",
     linkedin: "https://www.linkedin.com/in/sanjay-kumar-3561b537a/",
   },
   {
@@ -533,6 +535,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Serial Founder",
     rpgClass: "Strategist · Founder",
     initials: "AM",
+    image: "/images/team/adhil.jpg",
     linkedin: "https://www.linkedin.com/in/adhil-m-60761b37b/",
   },
   {
@@ -540,6 +543,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Principal Founder",
     rpgClass: "Architect · Founder",
     initials: "AA",
+    image: "/images/team/aboorehaan.jpg",
     linkedin: "https://www.linkedin.com/in/aboorehaan-a-8a5367397/",
   },
   {
@@ -547,6 +551,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Technical Lead & Staff Engineer",
     rpgClass: "Staff Engineer · Tech Lead",
     initials: "AM",
+    image: "/images/team/ananthrajagopalan.jpg",
     linkedin: "https://www.linkedin.com/in/anantharajagopalan-m-889b52380/",
   },
   {
@@ -554,6 +559,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Senior Game Developer & BOD",
     rpgClass: "Lead Dev · BOD",
     initials: "AV",
+    image: "/images/team/ashwath.jpg",
     linkedin: "https://www.linkedin.com/in/ashwathvetri/",
   },
   {
@@ -568,6 +574,7 @@ export const TEAM_PARTY: TeamMember[] = [
     role: "Junior Game Developer & BOD",
     rpgClass: "Game Dev · BOD",
     initials: "PV",
+    image: "/images/team/prithish.jpg",
     linkedin: "https://www.linkedin.com/in/prithish-v-s-4935843a9/",
   },
 ];

@@ -45,15 +45,23 @@ export default function TeamSection() {
             >
               {/* Gradient Ring Wrapper via padding + background-gradient trick */}
               <div className="rounded-full bg-transparent p-[3px] transition-all duration-300 group-hover:scale-110 group-hover:bg-gradient-to-tr group-hover:from-[#4361EE] group-hover:to-[#7B2FF7] group-hover:shadow-lg group-hover:shadow-[#4361EE]/20">
-                <div
-                  className={`flex h-24 w-24 items-center justify-center rounded-full border-2 border-white font-display text-xl font-bold sm:h-28 sm:w-28 ${
-                    isDark
-                      ? "border-[#0F0F1A] bg-[#222238] text-white"
-                      : "bg-gray-200 text-[#1A1A2E]"
-                  }`}
-                >
-                  {member.initials}
-                </div>
+                {member.image ? (
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="h-24 w-24 rounded-full border-2 border-white object-cover object-top sm:h-28 sm:w-28 dark:border-[#0F0F1A]"
+                  />
+                ) : (
+                  <div
+                    className={`flex h-24 w-24 items-center justify-center rounded-full border-2 border-white font-display text-xl font-bold sm:h-28 sm:w-28 ${
+                      isDark
+                        ? "border-[#0F0F1A] bg-[#222238] text-white"
+                        : "bg-gray-200 text-[#1A1A2E]"
+                    }`}
+                  >
+                    {member.initials}
+                  </div>
+                )}
               </div>
 
               <span className="mt-4 font-mono text-[10px] font-bold uppercase tracking-wider text-[#4361EE]">
